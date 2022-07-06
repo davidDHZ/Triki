@@ -1,75 +1,83 @@
-
-body{
+body {
     margin: 0;
     background-color: #efefef;
 }
- header{
+
+header {
     background-color: #364552;
     color: white;
     padding: 15px;
- }
-
-h1{
-    font-size: 50px;
-    text-align: center;  
 }
- 
-table{
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+table {
     border-collapse: collapse;
     margin: 0 350px;
 }
 
 td {
     border: 3px solid #000;
-    height:120px;
+    height: 120px;
     width: 120px;
 }
 
-input[type=checkbox]{
+input[type=checkbox] {
     display: none;
 }
 
-input[type=checkbox] + label {
+input[type=checkbox]+label {
     cursor: pointer;
 }
 
-label:before{
+label:before {
     background-color: white;
     content: '';
     display: inline-block;
-    height:116px;
+    height: 116px;
     width: 120px;
 }
 
-input[type=checkbox]:checked + label:before{
+input[type=checkbox].ficha-X:checked+label:before {
     content: 'X';
     text-align: center;
     font-size: 100px;
-    color:#364552;;
+    color: #364552;
+    ;
 }
 
-p{
+input[type=checkbox].ficha-O:checked+label:before {
+    content: 'O';
+    text-align: center;
+    font-size: 100px;
+    color: #364552;
+    ;
+}
+
+p {
     float: right;
     background-color: white;
     margin: 0;
     padding: 20px;
     font-size: 30px;
     text-align: center;
-    border:2px solid #000;
+    border: 2px solid #000;
     border-radius: 25px;
 }
 
-#jugadorX p{
+#jugadorX p {
     margin: 35px 350px;
- }
+}
 
-#jugadorO p{
+#jugadorO p {
     margin: 0 350px;
- }
+}
 
- span{
+span {
     margin: 0;
     font-size: 50px;
-    color:#364552;
- }
-
+    color: #364552;
+}
